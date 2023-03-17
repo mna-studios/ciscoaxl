@@ -3413,3 +3413,15 @@ class axl(object):
             return self.client.removeCallPickupGroup(**args)
         except Fault as e:
             return e
+
+    def delete_remote_destination(self, **args):
+        try:
+            return self.client.removeRemoteDestination(**args)
+        except Fault as e:
+            return e
+
+    def delete_remote_destination_profile(self, **args):
+        try:
+            return self.client.removeRemoteDestinationProfile(**args)
+        except Fault as e:
+            return e
